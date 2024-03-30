@@ -1,0 +1,134 @@
+@charset "utf-8";
+@import url("main.css");
+@media screen { 
+    body {
+    background: aqua url("../img/background.jpg") scroll no-repeat left top;    
+}
+}
+
+@media print {
+    body {
+        background: white;
+        color: black;
+        filter: grayscale(100%);
+    }
+    header {
+        display: none;
+    }
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black !important
+}
+
+header {
+    height: 150px;
+    background-color: rgba(21, 72, 72, 0.5);
+}
+
+nav {
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    top: 120px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    background-color: pink;
+    width: 600px;
+    height: 34px;
+}
+
+nav li {
+    float: left;
+    padding: 2px;
+    margin-right: 10px;
+    height: 30px;
+}
+
+nav ul > li {
+    background-color: aquamarine;
+}
+
+nav .menu a:link {
+    text-decoration: none;
+    background-color: blueviolet;
+}
+
+nav .menu a:hover {
+    background-color: red;
+    color: white;
+}
+
+nav ul:hover {
+    background-color: darkorange;
+}
+
+h1, h2 {
+    color: blue;
+    text-shadow: red 2px 5px;;
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+article {
+    padding: 20px;
+}
+
+#flight-statuses {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table tr {
+    height: 40px;
+}
+
+table tr:nth-child(odd){
+    background-color: white;
+}
+
+table tr:nth-child(even){
+    background-color: lightgray;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+table td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#flight-statuses tr:hover {
+    background-color: darkgray;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.cancelled {
+    font-weight: bold;
+    color: red;
+}
+
+.departed {
+    color: green;
+}
+
+.departed:after {
+    content: '\2708';
+}

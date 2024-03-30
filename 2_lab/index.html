@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Tallinn University of Technology – Web Technologies - Learning CSS">
+        <meta name="keywords" content="ICD0007, LAB2, CSS">
+        <meta name="author" content="stlill">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LAB2 - CSS</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <style>
+          #flight-statuses tr:nth-child(8) td:nth-of-type(3) {
+            background-color: pink;
+          }
+        </style>
+    </head>
+    <body>
+        <!-- Header section of the document -->
+        <header>
+            <nav>
+                <ul>
+                    <li class="menu"><a href="#">Menu item 1</a></li>
+                    <li class="menu"><a href="#">Menu item 2</a></li>
+                    <li class="menu"><a href="#">Menu item 3</a></li>
+                    <li class="menu"><a href="#">Menu item 4</a></li>
+                    <li class="menu"><a href="#">Menu item 5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Content section of the document -->
+        <div>
+            <article>
+                <h1>The wonderful test of CSS</h1>
+                <p>Lorem ipsum <span style="border: 1px solid green;">dolor</span> sit amet</p>
+                <h2>
+                    Subsection
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida massa sed suscipit pretium. Nullam finibus faucibus felis. Proin rutrum tristique ipsum id tristique. Proin eu vulputate lectus, vel iaculis turpis. Morbi finibus vehicula lobortis. Vivamus non tempus elit. Curabitur odio elit, hendrerit sit amet leo ut, iaculis pretium orci. Suspendisse tincidunt at orci vel rutrum. 
+volutpat accumsan justo, eget faucibus erat viverra quis. Pellentesque sollicitudin condimentum risus, at pharetra lorem feugiat nec. Vestibulum efficitur eleifend ante ornare eleifend. Fusce vel nisl egestas, rhoncus eros ac, rutrum lacus. Maecenas porttitor accumsan lobortis. Duis eget nibh ac purus elementum interdum facilisis at quam. Phasellus nec condimentum tortor. Quisque eu magna sed odio porttitor maximus. Maecenas urna dolor, malesuada id porttitor eu, ultricies eget felis.
+                </p>
+                <table id="flight-statuses">
+                    <tr>
+                      <th>Time</th>
+                      <th>Flight</th>
+                      <th>Destination</th>
+                      <th>Remarks</th>
+                    </tr>
+                    <tr>
+                      <td>15:00</td>
+                      <td>LH020</td>
+                      <td>Hamburg</td>
+                      <td class="departed">departed</td>
+                    </tr>
+                    <tr>
+                      <td>15:05</td>
+                      <td>IB3122</td>
+                      <td>Madrid</td>
+                      <td class="info">final call </td>
+                    </tr>
+                    <tr>
+                      <td>16:25</td>
+                      <td>EZY5546</td>
+                      <td>Berlin Tegel</td>
+                      <td class="info">on-time</td>
+                    </tr>
+                    <tr>
+                      <td>16:55</td>
+                      <td>FR4128</td>
+                      <td>Alicante</td>
+                      <td class="info">check-in 100-123 </td>
+                    </tr>
+                    <tr>
+                      <td>17:20</td>
+                      <td>AY3124</td>
+                      <td>Helsinki</td>
+                      <td class="cancelled">cancelled</td>
+                    </tr>
+                    <tr>
+                      <td>19:10</td>
+                      <td>BA909</td>
+                      <td>London Heathrow </td>
+                      <td class="info">check-in opens at 17:10 </td>
+                    </tr>
+                    <tr>
+                      <td>19:10</td>
+                      <td>SK1424</td>
+                      <td>Stockholm</td>
+                      <td class="cancelled">cancelled</td>
+                    </tr>
+                    <tr>
+                      <td>19:30</td>
+                      <td>SK943</td>
+                      <td>Chicago O'Hare </td>
+                      <td class="info">delayed</td>
+                    </tr>
+                 </table>
+            </article>
+        </div>
+        <!-- Footer section of the document-->
+        <footer>
+            <p>ICD0007 Lab2 - CSS</p>
+        </footer>
+    </body>
+</html>

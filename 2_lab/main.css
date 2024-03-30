@@ -1,0 +1,26 @@
+@charset "utf-8";
+html, body {
+    box-sizing: border-box; 
+    height: 100%;
+    width: 100%;
+    }
+body {
+    color: red;
+    margin: 0;
+    padding:0;
+}
+footer {
+    background-color: black;
+    bottom: 0;
+    color: white; 
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    position: fixed;
+    text-align: right;
+    vertical-align: middle;
+    width: 100%;
+}
+footer p {
+    margin: 0 10px 0 0;
+}
