@@ -1,0 +1,39 @@
+.required::after {
+    content: " *";
+    color: red;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#formReserve {
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#errorMessage {
+    background-color: white;
+    border: 3px solid red;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#errorHeading {
+    text-align: center;
+}
+
+#successful {
+    background-color: white;
+    border: 3px solid green;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#download {
+    text-align: center;
+}
