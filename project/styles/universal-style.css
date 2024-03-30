@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* General rules for the whole sit */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 !important
+}
+h1 {
+    font-size: 54px;
+}
