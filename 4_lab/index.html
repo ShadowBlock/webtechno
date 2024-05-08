@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>LAB 10 - Shopping List</title>
+</head>
+<body>
+    <h1 id="nameDisplay"></h1>
+    <button onclick="logout()" id="log">Log in</button> <br>
+    <p id="errorDisplay"></p>
+    <div class="form">
+        <form>
+            <label for="product">Product:</label>
+            <input type="text" name="product" id="product" pattern="[a-zA-Z0-9][a-zA-Z0-9 %\-]*" maxlength="100" onkeypress="keyPress(event)" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" min="1" step="1" max="1000000" onkeypress="keyPress(event)" required>
+        </form>
+        <button onclick="submitPressed()">Add to list</button>
+    </div> <br>
+    <table id="growing-table">
+        <tr><thead><th>No.</th><th>Product</th><th>Quantity</th></thead><tbody></tbody></tr>
+    </table>
+</body>
+</html>
