@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import url(register.css);
+
+.link_reg {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+input[type="checkbox"] {
+    margin: 20px 0;
+}
